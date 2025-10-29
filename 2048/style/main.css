@@ -709,3 +709,60 @@ hr {
     margin-top: 90px !important; }
   .game-message .lower {
     margin-top: 30px !important; } }
+
+/* Dark terminal theme */
+body.theme-dark {
+  background: #0b0e0f;
+  color: #d1ffd1;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+
+body.theme-dark a {
+  color: #9cff9c; }
+
+body.theme-dark .scores-container .score-container,
+body.theme-dark .scores-container .best-container {
+  background: #1d2327;
+  color: #e6ffe6; }
+  body.theme-dark .scores-container .score-container:after,
+  body.theme-dark .scores-container .best-container:after {
+    color: #a0b3a0; }
+
+body.theme-dark .game-container {
+  background: #1a1f24; }
+
+body.theme-dark .grid-cell {
+  background: rgba(255, 255, 255, 0.08); }
+
+body.theme-dark .game-message {
+  background: rgba(30, 40, 40, 0.7) !important;
+  color: #e6ffe6; }
+
+/* Buttons */
+.theme-toggle-button {
+  display: inline-block;
+  background: #444c56;
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 40px;
+  line-height: 42px;
+  display: block;
+  text-align: center;
+  float: right;
+  margin-left: 10px; }
+
+body.theme-dark .restart-button {
+  background: #2e3540; }
+
+body.theme-dark .theme-toggle-button {
+  background: #2f3b46;
+  color: #c6ffd0; }
+
+/* Optional: slightly dim base UI text for contrast */
+body.theme-dark .game-intro,
+body.theme-dark .game-explanation,
+body.theme-dark hr {
+  color: #cfe9cf; }
+body.theme-dark hr {
+  border-bottom-color: #2a2f33; }
