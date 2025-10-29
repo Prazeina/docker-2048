@@ -13,14 +13,14 @@ spec:
   selector:
     matchLabels:
       app.kubernetes.io/name: app-2048
-  replicas: 2 # You can adjust the number of replicas as needed
+  replicas: 20 # You can adjust the number of replicas as needed
   template:
     metadata:
       labels:
         app.kubernetes.io/name: app-2048
     spec:
       containers:
-      - image:  ghcr.io/prazeina/docker-2048:sha-66ca783 # Replace with your 2048 game image
+      - image:  ghcr.io/prazeina/docker-2048:sha-7adb945 # Replace with your 2048 game image
         imagePullPolicy: IfNotPresent # Or Always if you want to ensure latest image pull
         name: app-2048
         ports:

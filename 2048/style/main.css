@@ -710,41 +710,40 @@ hr {
   .game-message .lower {
     margin-top: 30px !important; } }
 
-/* Dark terminal theme */
+/* Dark theme (refined) */
 body.theme-dark {
-  background: #0b0e0f;
-  color: #d1ffd1;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+  background: #0e1116;
+  color: #e5e7eb; }
 
 body.theme-dark a {
-  color: #9cff9c; }
+  color: #8ab4f8; }
 
 body.theme-dark .scores-container .score-container,
 body.theme-dark .scores-container .best-container {
-  background: #1d2327;
-  color: #e6ffe6; }
+  background: #2a2f35;
+  color: #e5e7eb; }
   body.theme-dark .scores-container .score-container:after,
   body.theme-dark .scores-container .best-container:after {
-    color: #a0b3a0; }
+    color: #9aa4af; }
 
 body.theme-dark .game-container {
-  background: #1a1f24; }
+  background: #1f2428; }
 
 body.theme-dark .grid-cell {
-  background: rgba(255, 255, 255, 0.08); }
+  background: #2b3136; }
 
 body.theme-dark .game-message {
-  background: rgba(30, 40, 40, 0.7) !important;
-  color: #e6ffe6; }
+  background: rgba(31, 36, 40, 0.8) !important;
+  color: #e5e7eb; }
 
 /* Buttons */
 .theme-toggle-button {
   display: inline-block;
-  background: #444c56;
+  background: #3a424a;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #f9f6f2;
+  color: #e5e7eb;
   height: 40px;
   line-height: 42px;
   display: block;
@@ -753,16 +752,28 @@ body.theme-dark .game-message {
   margin-left: 10px; }
 
 body.theme-dark .restart-button {
-  background: #2e3540; }
+  background: #3a424a;
+  color: #e5e7eb; }
 
 body.theme-dark .theme-toggle-button {
-  background: #2f3b46;
-  color: #c6ffd0; }
+  background: #2e3640;
+  color: #cbd5e1; }
 
-/* Optional: slightly dim base UI text for contrast */
+/* Typography tweaks */
 body.theme-dark .game-intro,
-body.theme-dark .game-explanation,
-body.theme-dark hr {
-  color: #cfe9cf; }
-body.theme-dark hr {
-  border-bottom-color: #2a2f33; }
+body.theme-dark .game-explanation { color: #cbd5e1; }
+body.theme-dark hr { border-bottom-color: #2a2f35; }
+
+/* Tiles in dark theme for better contrast */
+body.theme-dark .tile .tile-inner { color: #e5e7eb; background: #374151; }
+body.theme-dark .tile.tile-2 .tile-inner { background: #1f2937; color: #d1d5db; }
+body.theme-dark .tile.tile-4 .tile-inner { background: #2b3440; color: #d1d5db; }
+body.theme-dark .tile.tile-8 .tile-inner { background: #f2b179; color: #111827; }
+body.theme-dark .tile.tile-16 .tile-inner { background: #f59563; color: #111827; }
+body.theme-dark .tile.tile-32 .tile-inner { background: #f67c5f; color: #111827; }
+body.theme-dark .tile.tile-64 .tile-inner { background: #f65e3b; color: #111827; }
+body.theme-dark .tile.tile-128 .tile-inner { background: #edcf72; color: #111827; }
+body.theme-dark .tile.tile-256 .tile-inner { background: #edcc61; color: #111827; }
+body.theme-dark .tile.tile-512 .tile-inner { background: #edc850; color: #111827; }
+body.theme-dark .tile.tile-1024 .tile-inner { background: #edc53f; color: #111827; }
+body.theme-dark .tile.tile-2048 .tile-inner { background: #edc22e; color: #111827; }
